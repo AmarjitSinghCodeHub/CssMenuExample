@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #222;
+  color: #eee;
+  font-size: 10pt;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MenuContainer {
+  position: relative;
+  width: 800px;
+  height: 60px;
+  background-color: #1B1B1B;
+  box-shadow: 4px 4px 4px #0e0d0d;
+  border-radius: 5px;
+}
+
+.MenuContainer ul {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.MenuContainer ul li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 90px;
+  line-height: 60px;
+}
+
+.MenuContainer ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #eee;
+}
+
+.MenuContainer ul li a .contentIcon {
+  position: relative;
+  font-size: 2em;
+  color: #111111;
+  transform: translateY(30px);
+  transition: all 0.5s;
+}
+
+.MenuContainer ul li a .contentText {
+  position: relative;
+  font-size: 0.7em;
+  color: #3f3f3f;
+  transform: translateY(-10px);
+}
+
+.MenuContainer ul li.activeMenu a .contentIcon {
+  color: #DE3163 !important;
+  transform: translateY(20px);
+  transition: all 0.5s;
+}
+
+.MenuContainer ul li a .contentText::before {
+  position: absolute;
+  content: "";
+  background-color: #DE3163 !important;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transform: translateY(-20px);
+  transition: all 0.5s;
+}
+
+.MenuContainer ul li.activeMenu a .contentText {
+  color: white;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+
+.MenuContainer ul li.activeMenu a .contentText::before {
+  position: absolute;
+  content: "";
+  background-color: #DE3163 !important;
+  width: 100%;
+  height: 1px;
+  transition: all 0.5s;
+}/*# sourceMappingURL=styles.css.map */

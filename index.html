@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/styles.css"/>
+</head>
+<body>
+    <div class="MenuContainer">
+        <ul>
+            <li class="menuItem"><a href="#"><span class="contentIcon"><i class="ri-home-4-line"></i></span><span class="contentText">Home</span></a></li>
+            <li class="menuItem"><a href="#"><span class="contentIcon"><i class="ri-service-fill"></i></span><span class="contentText">Services</span> </a></li>
+            <li class="menuItem"><a href="#"><span class="contentIcon"><i class="ri-government-line"></i></span><span class="contentText">Head Office</span> </a></li>
+            <li class="menuItem"><a href="#"><span class="contentIcon"><i class="ri-settings-4-line"></i></span><span class="contentText">Settings</span> </a></li>
+            <li class="menuItem"><a href="#"><span class="contentIcon"><i class="ri-gallery-line"></i></span><span class="contentText">Gallery</span> </a></li>
+            <li class="menuItem"><a href="#"><span class="contentIcon"><i class="ri-secure-payment-line"></i></span><span class="contentText">Payment</span> </a></li>
+            <li class="menuItem"><a href="#"><span class="contentIcon"><i class="ri-smartphone-line"></i></span><span class="contentText">Contact Us</span> </a></li>
+        </ul>
+    </div>
+
+
+    <script>
+
+        let _allItem=document.querySelectorAll('.menuItem');
+
+        function ShowActiveMenu(){
+            _allItem.forEach((x)=>{
+              x.classList.remove('activeMenu')
+            }
+            );
+            this.classList.add('activeMenu');
+        }
+
+        _allItem.forEach((i)=>{
+            i.addEventListener("click",ShowActiveMenu);
+        });
+    
+     
+    </script>
+
+</body>
+</html>
